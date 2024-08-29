@@ -21,7 +21,7 @@
   background-image: var(--cover-image);
 }
 
-.theme_light .decoration{
+.theme_light .decoration {
   display: none;
 }
 
