@@ -19,6 +19,20 @@
   --cover-image: url(../images/cover-image-dark.png);
 }
 
+@media (prefers-color-scheme: dark) {
+  
+  :root {
+    --main-color:#000028;
+    --title-color:#DB00FF;
+    --accent-color:#FF0070;
+    --field-color:#FF0070;
+    --text-color:#F1B2CE;
+    --button-color:#FF0070;
+    --section-color:#FF0070;
+    --cover-image: url(../images/cover-image-dark.png);
+  }
+}
+
 .theme_dark .decoration {
   display: inline-block;
 }

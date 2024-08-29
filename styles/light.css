@@ -21,6 +21,22 @@
   background-image: var(--cover-image);
 }
 
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --main-color:#FFF1F7;
+    --title-color:#FFC2E6;
+    --accent-color:#FF0070;
+    --field-color:#FF8DCB;
+    --text-color:#353430;
+    --button-color:#353430;
+    --section-color:#353430;
+    --subtitle-color:#353430;
+    --cover-image: url(../images/cover-image-light.png);
+    background-image: var(--cover-image);
+  }
+}
+
 .theme_light .decoration {
   display: none;
 }

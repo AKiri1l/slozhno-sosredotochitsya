@@ -363,7 +363,7 @@
 
   .header__title-description {
     grid-column: 2/3;
-    margin-block-start: 10x;
+    margin-block-start: 10px;
   }
 
   .decorated-zone::before {
