@@ -133,6 +133,11 @@
   gap: 50px;
 }
 
+.content__block {
+  display: grid;
+  gap: 20px;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -195,6 +200,10 @@
   border: 1px solid var(--text-color)
 }
 
+.section:nth-of-type(3) h4.section__list-subtitle {
+  font-weight: 400;
+}
+
 .section:last-of-type {
   gap: 10px;
 }
@@ -221,7 +230,7 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
-@media (width: 768px) {
+@media (768px <= width < 1024) {
 
   .page {
     inline-size: 768px;
@@ -330,7 +339,7 @@
   }
 }
 
-@media (width: 1024px) {
+@media (width >= 1024px) {
 
   .page {
     inline-size: 1024px;
