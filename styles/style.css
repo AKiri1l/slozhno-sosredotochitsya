@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   inline-size: 375px;
-  padding: 0 10px;
+  padding: 0px 10px;
   font-family: 'IBM Plex mono', sans-serif;
   background-color: var(--main-color);
   background-repeat: no-repeat;
