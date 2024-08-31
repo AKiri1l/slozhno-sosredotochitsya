@@ -15,8 +15,11 @@
   --field-color:#FF0070;
   --text-color:#F1B2CE;
   --button-color:#FF0070;
+  --button-hover:rgb(255, 0, 112, 0.4);
   --section-color:#FF0070;
+  --subtitle-color:#000028;
   --cover-image: url(../images/cover-image-dark.png);
+  background-image: var(--cover-image);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,11 +31,16 @@
     --field-color:#FF0070;
     --text-color:#F1B2CE;
     --button-color:#FF0070;
+    --button-hover:rgb(255, 0, 112, 0.4);
     --section-color:#FF0070;
+    --subtitle-color:#000028;
     --cover-image: url(../images/cover-image-dark.png);
+    background-image: var(--cover-image);
   }
 }
 
 .theme_dark .decoration {
   display: inline-block;
 }
+
+

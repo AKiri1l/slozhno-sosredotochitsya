@@ -2,9 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  inline-size: 375px;
-  padding: 0px 10px;
-  font-family: 'IBM Plex mono', sans-serif;
+  padding: 0 10px;
+  background-image: var(--cover-image);
+  font-family: 'IBM Plex mono', monospace;
   background-color: var(--main-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +13,7 @@
 }
 
 .header {
+  min-block-size: 668px;
   block-size: 100vh;
   position: relative;
   display: grid;
@@ -95,7 +96,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgb(255, 0, 112, 0.4);
+  outline: 1px solid var(--button-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -104,6 +105,7 @@
 }
 
 .header__theme-menu-button_active {
+  pointer-events: none;
   border: 1px solid var(--section-color);
 }
 
@@ -192,7 +194,7 @@
 }
 
 .section__link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
 .section__link:focus {
@@ -200,7 +202,7 @@
   border: 1px solid var(--text-color)
 }
 
-.section:nth-of-type(3) h4.section__list-subtitle {
+.paragraph__subtitle {
   font-weight: 400;
 }
 
@@ -212,10 +214,17 @@
   gap: 10px;
 }
 
+.section:last-of-type .section__list-image {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+}
+
 .footer {
   margin-block-start: 40px;
   display: flex;
   position: relative;
+  min-block-size: 668px;
   height: 100vh;
 }
 
@@ -230,7 +239,7 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
-@media (768px <= width < 1024) {
+@media (768px <= width < 1024px) {
 
   .page {
     inline-size: 768px;
@@ -402,11 +411,11 @@
     grid-template-columns: auto 649px;
   }
   
-  .section:nth-of-type(2) {
+  /*.section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,auto);
-  }
+  }*/
 
   .section:nth-of-type(2) .section__title {
     grid-row: 1/2;
@@ -417,13 +426,12 @@
     grid-row: 2/3;
     grid-column: 1/4;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .section:nth-of-type(2) .section__list-item {
-    inline-size: 100%;
+    inline-size: 314.66px;
   }
-
-
 
   .section:last-of-type {
     display: flex;
@@ -461,12 +469,6 @@
 
   .section:last-of-type .section__list .section__list-item:nth-child(5) {
     grid-area: pic5;
-  }
-
-  .section:last-of-type .section__list-image {
-    block-size: 100%;
-    inline-size: 100%;
-    object-fit: cover;
   }
 
   .footer {
