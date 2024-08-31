@@ -19,7 +19,6 @@
   --section-color:#353430;
   --subtitle-color:#353430;
   --cover-image: url(../images/cover-image-light.png);
-  background-image: var(--cover-image);
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,7 +34,6 @@
     --section-color:#353430;
     --subtitle-color:#353430;
     --cover-image: url(../images/cover-image-light.png);
-    background-image: var(--cover-image);
   }
 
   .decoration {

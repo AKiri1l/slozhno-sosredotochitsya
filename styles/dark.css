@@ -19,7 +19,6 @@
   --section-color:#FF0070;
   --subtitle-color:#000028;
   --cover-image: url(../images/cover-image-dark.png);
-  background-image: var(--cover-image);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +34,6 @@
     --section-color:#FF0070;
     --subtitle-color:#000028;
     --cover-image: url(../images/cover-image-dark.png);
-    background-image: var(--cover-image);
   }
 }
 
